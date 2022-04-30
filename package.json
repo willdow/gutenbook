@@ -8,7 +8,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "cz-emoji"
+      "path": "cz-conventional-changelog"
     }
   },
   "dependencies": {
