@@ -1,4 +1,29 @@
-# ⚡ Vite ✔ Vue 3 🌻 Tailwind CSS
+# Gutenbook
+
+## Getting Started
+
+### Installation
+
+```sh
+yarn
+git clone https://github.com/willdow/gutenbook.git
+cd gutenbook
+```
+
+### Development
+
+```sh
+cp .env.example .env
+yarn dev
+```
+
+### Build
+
+```sh
+yarn build
+```
+
+## Starter template
 
 ![Vite, Vue, Tailwind CSS](https://user-images.githubusercontent.com/11320080/111277027-a9384c00-8640-11eb-8323-21889bd7c609.png)
 
@@ -14,25 +39,6 @@ This starter template includes:
   by the makers of Tailwind CSS
 - [prettier-plugin-tailwindcss](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier) - Automatic Class Sorting with Prettier
 
-First-party plugins needed for Tailwind UI:
+## TO DO
 
-- [tailwindcss/forms](https://github.com/tailwindlabs/tailwindcss-forms)
-- [tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin)
-- [tailwindcss/line-clamp](https://github.com/tailwindlabs/tailwindcss-line-clamp)
-- [tailwindcss/aspect-ratio](https://github.com/tailwindlabs/tailwindcss-aspect-ratio)
-
-### Getting Started
-
-```sh
-npx degit web2033/vite-vue3-tailwind-starter vvt-app
-cd vvt-app
-```
-
-```sh
-npm i
-npm run dev
-npm run build
-npm run serve
-```
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/web2033/vite-vue3-tailwind-starter)
+[ ] de
