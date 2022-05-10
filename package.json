@@ -23,7 +23,7 @@
     "global": "^4.4.0",
     "prettier": "^2.6.2",
     "vue": "^3.2.33",
-    "vue-router": "^4.0.14",
+    "vue-router": "^4.0.15",
     "vuex": "^4.0.2"
   },
   "devDependencies": {
