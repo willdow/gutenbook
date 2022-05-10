@@ -19,22 +19,12 @@ const getBook = async (id) => {
     });
 }
 
-const searchBooks = async ({ page, limit, word }) => {
-  if (limit) {
-    return await fetch(`${import.meta.env.VITE_GUTENDEX_URL}/search?q=${word}&limit=${limit}&page=${page}`)
-      .then((response) => response.json())
-      .catch(error => {
-        console.log("ERROR searchBooks: ", error);
-      });
-  }
-  else {
-    return await fetch(`${import.meta.env.VITE_GUTENDEX_URL}/search?q=${word}&limit=40&page=${page}`)
-      .then((response) => response.json())
-      .catch(error => {
-        console.log("ERROR searchBooks: ", error);
-      });
-  }
-
+const searchBooks = async ({ word }) => {
+  return await fetch(`${import.meta.env.VITE_GUTENDEX_URL}/books?search=${word}`)
+    .then((response) => response.json())
+    .catch(error => {
+      console.log("ERROR searchBooks: ", error);
+    });
 }
 const getBooksPerLanguage = async (language) => data[language];
 

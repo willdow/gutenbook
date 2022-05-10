@@ -6,7 +6,7 @@
       >
         <div
           v-for="book in books"
-          :key="book.title"
+          :key="book.id"
           class="relative pb-1 text-center rounded-lg shadow-lg group"
         >
           <Cover :book="book" />
@@ -18,7 +18,7 @@
         <p class="text-4xl font-extrabold text-indigo-600">Oops...</p>
         <div class="sm:ml-6">
           <div class="sm:border-l sm:border-gray-200 sm:pl-6">
-            <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight">
+            <h1 class="text-4xl font-extrabold tracking-tight text-gray-900">
               Book not found
             </h1>
             <p class="mt-1 text-base text-gray-500">Please try another book.</p>

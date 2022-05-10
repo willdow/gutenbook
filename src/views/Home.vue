@@ -50,7 +50,7 @@
                     class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-700"
                     :to="{
                       name: 'Search',
-                      query: { q: searchText, page: 1, limit: limit }
+                      query: { q: searchText }
                     }"
                   >
                     Search
@@ -74,7 +74,7 @@
               class="flex flex-col items-center justify-center mt-5 sm:items-start sm:justify-start"
             >
               <a
-                href="https://gitlab.alessandroserver.com/search-engine/front"
+                href="https://github.com/willdow/gutenbook"
                 class="text-base text-gray-500 hover:text-indigo-900"
               >
                 App repository
@@ -104,16 +104,11 @@ export default {
   data: () => ({
     searchText: ""
   }),
-  computed: {
-    limit() {
-      return this.$store.state.limit;
-    }
-  },
   methods: {
     // submit() {
     //   return this.$router.push({
     //     name: "Search",
-    //     params: { q: this.searchText, page: 1, limit: this.limit }
+    //     params: { q: this.searchText}
     //   });
     // }
   }

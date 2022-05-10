@@ -37,8 +37,8 @@ const store = createStore({
     fetchBook: async (store, id) => {
       store.commit("storeBook", await getBook(id));
     },
-    fetchSearch: async (store, page, word) => {
-      store.commit("storeBooks", await searchBooks(page, word));
+    fetchSearch: async (store, word) => {
+      store.commit("storeBooks", await searchBooks(word));
     },
   },
   modules: {},

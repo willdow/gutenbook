@@ -58,7 +58,7 @@
               class="px-3 py-2 text-sm font-medium rounded-md cursor-pointer"
               :to="{
                 name: 'Search',
-                query: { q: searchText, page: 1, limit: limit }
+                query: { q: searchText }
               }"
             >
               <svg
@@ -117,16 +117,11 @@ export default defineComponent({
     ],
     searchText: ""
   }),
-  computed: {
-    limit() {
-      return this.$store.state.limit;
-    }
-  },
   methods: {
     // submit() {
     //   return this.$router.push({
     //     name: "Search",
-    //     params: { q: this.searchText, page: 1, limit: this.limit }
+    //     params: { q: this.searchText }
     //   });
     // }
   }

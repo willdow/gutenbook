@@ -18,7 +18,7 @@ export let routes = [
   { path: "/random", name: 'Random', component: Random, meta: { title: "Random" } },
   { path: "/about", name: 'About', component: About, meta: { title: "About us" } },
   {
-    path: "/search", name: 'Search', component: Search, props: route => ({ query: route.query.q, page: route.query.page, limit: route.query.limit }), meta: { title: "Find your book" }
+    path: "/search", name: 'Search', component: Search, props: route => ({ query: route.query.q }), meta: { title: "Find your book" }
   },
   { path: "/:path(.*)", component: NotFound }
 ];
