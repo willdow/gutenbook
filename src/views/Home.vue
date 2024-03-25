@@ -2,19 +2,10 @@
   <div class="relative overflow-hidden bg-white">
     <div class="mx-auto max-w-7xl">
       <div
-        class="relative z-10 pt-1 pb-8 bg-white sm:pb-14 lg:w-full lg:max-w-2xl"
+        class="relative z-10 bg-white pb-8 pt-1 sm:pb-14 lg:w-full lg:max-w-2xl"
       >
-        <svg
-          class="absolute inset-y-0 right-0 hidden w-48 h-full text-white transform translate-x-1/2 lg:block"
-          fill="currentColor"
-          viewBox="0 0 100 100"
-          preserveAspectRatio="none"
-          aria-hidden="true"
-        >
-          <polygon points="50,0 100,0 50,100 0,100" />
-        </svg>
         <main
-          class="px-4 mx-auto mt-10 max-w-7xl sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28"
+          class="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28"
         >
           <div class="sm:text-center lg:text-left">
             <h1
@@ -33,7 +24,7 @@
             </p>
             <div class="mt-10 sm:mt-12">
               <div class="sm:mx-auto sm:flex sm:max-w-xl lg:mx-0">
-                <div class="flex-1 min-w-0">
+                <div class="min-w-0 flex-1">
                   <label for="book" class="sr-only">Enter a book</label>
                   <input
                     id="book"
@@ -41,13 +32,13 @@
                     type="text"
                     name="book"
                     placeholder="Tape something..."
-                    class="block w-full px-4 py-3 text-base text-gray-900 placeholder-gray-400 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-700"
+                    class="block w-full rounded-md border border-gray-300 px-4 py-3 text-base text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-700"
                   />
                   <!-- @keyup.enter="submit()" -->
                 </div>
-                <div class="mt-3 sm:mt-0 sm:ml-3">
+                <div class="mt-3 sm:ml-3 sm:mt-0">
                   <router-link
-                    class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-700"
+                    class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700"
                     :to="{
                       name: 'Search',
                       query: { q: searchText }
@@ -63,7 +54,7 @@
             >
               <div class="rounded-md">
                 <router-link
-                  class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-indigo-700 bg-indigo-100 border border-transparent rounded-md hover:bg-indigo-200"
+                  class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-100 px-8 py-3 text-base font-medium text-indigo-700 hover:bg-indigo-200"
                   to="/languages"
                 >
                   Find books by language
@@ -71,7 +62,7 @@
               </div>
             </div>
             <div
-              class="flex flex-col items-center justify-center mt-5 sm:items-start sm:justify-start"
+              class="mt-5 flex flex-col items-center justify-center sm:items-start sm:justify-start"
             >
               <a
                 href="https://github.com/willdow/gutenbook"
@@ -90,9 +81,9 @@
         </main>
       </div>
     </div>
-    <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+    <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:top-28 lg:w-1/2">
       <img
-        class="object-cover w-full h-56 sm:h-72 md:h-96 lg:h-full"
+        class="h-full w-full object-cover"
         src="/img/book.jpg"
         alt="Image de couverture"
       />
